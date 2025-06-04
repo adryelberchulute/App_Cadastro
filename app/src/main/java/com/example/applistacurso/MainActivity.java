@@ -54,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
             Curso curso = new Curso(editCurso.getText().toString());
 
             pessoaController.salvarPessoa(pessoa);
+            pessoaController.salvar(pessoa);
+            pessoaController.toString();
             cursoController.salvarCurso(curso);
         });
 
