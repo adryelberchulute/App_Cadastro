@@ -1,11 +1,9 @@
-package com.example.applistacurso.Model;
-
+package com.adryel.applistacurso.Model;
 
 public class Pessoa {
     private String nome;
     private String sobrenome;
     private String telefone;
-
 
     public Pessoa(String nome, String sobrenome, String telefone) {
         this.nome = nome;
@@ -33,16 +31,12 @@ public class Pessoa {
         return telefone;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
+    public void setTelefone(int telefone) {
+        this.telefone = String.valueOf(telefone);
     }
 
     @Override
     public String toString() {
-        return "Pessoa{" +
-                "nome='" + nome + '\'' +
-                ", sobrenome='" + sobrenome + '\'' +
-                ", telefone='" + telefone + '\'' +
-                '}';
+        return "Nome completo= " + nome + " " + sobrenome + "\nTelefone= " + telefone;
     }
 }

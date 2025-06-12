@@ -1,4 +1,4 @@
-package com.example.applistacurso;
+package com.adryel.applistacurso;
 
 import android.content.Context;
 

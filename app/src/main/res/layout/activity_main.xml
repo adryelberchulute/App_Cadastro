@@ -12,27 +12,28 @@
         android:layout_width="359dp"
         android:layout_height="48dp"
         android:layout_marginBottom="100dp"
-        android:text="Finalizar"
+        android:text="@string/finalizar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText3"
-        app:layout_constraintVertical_bias="0.75" />
+        app:layout_constraintVertical_bias="0.75"
+        tools:ignore="UnknownId" />
 
     <EditText
         android:id="@+id/primeiroNome"
         android:layout_width="395dp"
         android:layout_height="48dp"
-        android:layout_marginTop="112dp"
         android:autofillHints=""
         android:ems="10"
-        android:hint="PrimeroNome"
+        android:hint="@string/primeronome"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        android:textColorHint="#546E7A"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.823"
+        app:layout_constraintVertical_bias="0.165"
         tools:ignore="UnknownId,UnknownIdInLayout" />
 
     <EditText
@@ -41,44 +42,28 @@
         android:layout_height="48dp"
         android:autofillHints=""
         android:ems="10"
-        android:hint="Telefone"
+        android:hint="@string/telefone"
         android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/finalizar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/curso"
-        app:layout_constraintVertical_bias="0.02" />
-
-    <EditText
-        android:id="@+id/curso"
-        android:layout_width="395dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="240dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="Curso"
-        android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.935"
-        tools:ignore="UnknownId,UnknownIdInLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/sobrenome"
+        app:layout_constraintVertical_bias="0.044" />
 
     <EditText
         android:id="@+id/sobrenome"
         android:layout_width="395dp"
         android:layout_height="48dp"
-        android:layout_marginTop="176dp"
         android:autofillHints=""
         android:ems="10"
-        android:hint="Sobrenome"
+        android:hint="@string/sobrenome"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.888"
+        app:layout_constraintVertical_bias="0.253"
         tools:ignore="UnknownId,UnknownIdInLayout" />
 
     <Button
@@ -86,7 +71,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
-        android:text="Salvar"
+        android:text="@string/salvar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintHorizontal_bias="0.0"
@@ -99,7 +84,7 @@
         android:id="@+id/limpar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Limpar"
+        android:text="@string/limpar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.842"
@@ -111,7 +96,7 @@
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aplicativo De Cadastro"
+        android:text="@string/aplicativo_de_cadastro"
         android:textSize="24sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -121,5 +106,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.047"
         tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/Selecionar"
+        android:layout_width="396dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.426" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

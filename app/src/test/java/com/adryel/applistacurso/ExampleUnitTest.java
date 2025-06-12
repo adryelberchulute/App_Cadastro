@@ -1,4 +1,4 @@
-package com.example.applistacurso;
+package com.adryel.applistacurso;
 
 import org.junit.Test;
 
