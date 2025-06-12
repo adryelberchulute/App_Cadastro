@@ -10,6 +10,8 @@ import android.widget.Spinner;
 import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.adryel.applistacurso.Controller.ControllerDB;
 import com.adryel.applistacurso.Controller.CursoController;
 import com.adryel.applistacurso.Controller.PessoaController;
 import com.adryel.applistacurso.Model.Curso;
@@ -50,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
         pessoaController = new PessoaController(this);
         cursoController = new CursoController(this);
+        ControllerDB db = new ControllerDB(this );
         editNome = findViewById(R.id.primeiroNome);
         editSobrenome = findViewById(R.id.sobrenome);
         editTelefone = findViewById(R.id.telefone);
@@ -64,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
             pessoaController.salvarPessoa(pessoa);
             cursoController.salvarCurso(curso);
+            db.inserirDados(pessoa.getNome(),pessoa.getSobrenome(), pessoa.getTelefone(), curso.getNomeCurso());
             Toast.makeText(this, "Dados Salvos", Toast.LENGTH_SHORT).show();
         });
 
